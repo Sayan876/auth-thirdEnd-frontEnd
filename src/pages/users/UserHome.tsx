@@ -6,7 +6,7 @@ import {
   AvatarFallback,
 } from "@/components/ui/avatar";
 import {
-  User,
+  
   ShieldCheck,
   Bell,
   Activity,
