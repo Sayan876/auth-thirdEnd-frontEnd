@@ -59,11 +59,11 @@ return (
 
       <div className="absolute left-1/2 flex -translate-x-1/2 items-center gap-2 font-semibold md:left-6 md:translate-x-0">
   <span className="inline-flex h-7 w-7 items-center justify-center rounded-md bg-gradient-to-r from-primary to-primary/40 text-primary-foreground">
-    A
+    S
   </span>
 
   <span className="tracking-tight text-base">
-    Auth App
+    Security App
   </span>
 </div>
 
