@@ -238,6 +238,8 @@ function FuturisticAuthHome() {
               JWT, OAuth2 and modern security practices.
             </p>
 
+            <NavLink to="/signup">
+
             <Button
               variant="secondary"
               size="lg"
@@ -246,6 +248,11 @@ function FuturisticAuthHome() {
               Create Account
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
+
+
+
+            </NavLink>
+            
           </CardContent>
         </Card>
       </section>
