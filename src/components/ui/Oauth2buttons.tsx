@@ -7,7 +7,7 @@ function Oauth2buttons() {
   return (
     <div className='flex flex-col gap-3'>
               {/* Google Login */}
-      <NavLink to={"http://localhost:8083/oauth2/authorization/google"}>
+      <NavLink to={"https://authapp-backend-spring.onrender.com/oauth2/authorization/google"}>
         
         <Button
         type="button"
@@ -23,7 +23,7 @@ function Oauth2buttons() {
 
       {/* GitHub Login */}
 
-      <NavLink  to="http://localhost:8083/oauth2/authorization/github">
+      <NavLink  to="https://authapp-backend-spring.onrender.com/oauth2/authorization/github">
 
         <Button
         type="button"
