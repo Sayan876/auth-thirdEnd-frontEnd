@@ -74,6 +74,20 @@ return (
         {checkLogin() ? (
           <>
             <NavLink
+              to="/"
+              className="hover:text-primary transition-colors"
+            >
+              Home
+            </NavLink>
+
+            <NavLink
+              to="/dashboard"
+              className="hover:text-primary transition-colors"
+            >
+              Dashboard
+            </NavLink>
+            
+            <NavLink
               to="/dashboard/profile"
               className="font-medium hover:text-primary transition-colors"
             >
@@ -173,6 +187,18 @@ return (
     <NavLink to="/dashboard/profile">
       <Button variant="ghost" className="w-full justify-start">
         Profile
+      </Button>
+    </NavLink>
+
+    <NavLink to="/dashboard">
+      <Button variant="ghost" className="w-full justify-start">
+        Dashboard
+      </Button>
+    </NavLink>
+
+    <NavLink to="/">
+      <Button variant="ghost" className="w-full justify-start">
+        Home
       </Button>
     </NavLink>
 
