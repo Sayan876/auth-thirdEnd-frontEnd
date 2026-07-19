@@ -5,7 +5,7 @@ import { refreshToken } from '@/services/AuthService';
  
 
 const apiClient = axios.create({
-    baseURL:import.meta.env.VITE_API_BASE_URL ||"https://myapp--authap--9wkd6xlc9gq5.code.run/api/v1",
+    baseURL:import.meta.env.VITE_API_BASE_URL ||"https://myapp--authap--9wkd6xlc9gq5.code.run/api/v1/auth",
     headers:{
         'Content-Type':"application/json"
     },
