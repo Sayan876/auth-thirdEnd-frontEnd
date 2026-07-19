@@ -15,6 +15,7 @@ import Userprofile from './pages/users/Userprofile.tsx';
 import OauthSuccess from './pages/OauthSuccess.tsx';
 import OauthFailure from './pages/OauthFailure.tsx';
 import ThemeProvider from './components/ThemeProvider.tsx';
+import GuestLayout from './pages/users/GuestLayout.tsx';
 
 
 
@@ -26,8 +27,10 @@ createRoot(document.getElementById('root')!).render(
 
     <Route path='/' element = {<RootLayout/>} > 
       <Route index element = {<App/>} />
-      <Route path="/login" element = {<Login/>} />
-      <Route path='/signup' element ={<Signup/>}/>
+      <Route element={<GuestLayout />}>
+         <Route path="/login" element={<Login />} />
+         <Route path="/signup" element={<Signup />} />
+      </Route>
       <Route path='/about' element = {<About/>} />
       <Route path='/services' element = {<Services/>} />
       <Route path='/dashboard' element ={<UserLayout/>} >
