@@ -201,9 +201,18 @@ function UserProfile() {
                     </p>
 
                     <p className="font-medium">
-                      {user?.createAt
-                        ? new Date(user.createAt).toLocaleDateString()
-                        : "Not Available"}
+                   {user?.createAt
+                       ? new Date(user.createAt).toLocaleString(undefined, {
+                      day: "2-digit",
+                      month: "long",
+                      year: "numeric",
+                      hour: "2-digit",
+                      minute: "2-digit",
+                      second: "2-digit",
+                      hour12: true,
+                      timeZoneName: "short",
+                               })
+                     : "Not Available"}
                     </p>
 
                   </div>
